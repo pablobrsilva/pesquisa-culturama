@@ -6,6 +6,56 @@
     <title>Pesquisa Culturama</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+
+        <!--tag form serve para iniciar um formulário
+            Action - recebe um url de destino dos dados
+            Method - Qual é a forma de envio do formulário
+                - GET  -> Pega os dados do formulário e insere na URL
+                - POST -> Pega os dados do formulário e envia para o back-end
+        -->      
+
+        <form action="" method="get">
+
+            <!--A tag fieldset é para representar um conjunto de um determinado assunto do formulário-->
+            <fieldset>     
+                
+                <!-- A tag legend esta diretamente relacionada ao fieldset, pois ela irá dar o nome do conjunto de informações -->
+                <legend>Dados Pessoais</legend>
+                
+                <!-- Tag label é especifica para descrever os campos
+                    Atributo for - Neste atributo passamos o nome do campo que queremos descrever
+                -->
+
+                <label for="userName">Nome</label>
+
+                <!-- tag input é um campo que é inserido normalmente dentro de um formulário, ele possui diversos tipos: text, number, password e etc -->
+
+                <input type="text" name="userName" required>
+
+                <label for="userAge">Idade</label>
+                <input type="number" min="12" max="100" name="age" required>
+
+                <label for="birthDate">Data de nascimento</label>
+                <input type="date" name="birthDate">
+
+                <label for="userEmail">E-mail</label>
+                <input type="email" name="userEmail">
+
+                <label for="userPhoneNumber">Telefone</label>
+                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="51998645789">
+
+                <label for="userImage">Upload de foto</label>
+                <input type="file" accept="image/*" name="userImage">
+                <!-- tag button é um botão genérico que para um formulário e essencial para o envio das informações-->
+            </fieldset>
+
+
+             <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
 </html>
