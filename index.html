@@ -140,16 +140,22 @@
             <fieldset>
                 <legend>Satisfação</legend>
                 <p>Dê sua opinião:</p>
-                <input type="radio" name="userSatisfaction" checked id="great">
-                <label for="great">Ótimo</label>
-                <input type="radio" name="userSatisfaction" id="good">
-                <label for="good">Bom</label>
-                <input type="radio" name="userSatisfaction" id="Regular">
-                <label for="Regular">Boa</label>
-                <input type="radio" name="userSatisfaction" id="bad">
-                <label for="bad">Ruim</label>                               
+                <input id="great" type="radio" name="userSatisfaction" checked value="otimo">
+                <label for="great">Ótimo</label><br>
+
+                <input id="good" type="radio" name="userSatisfaction" value="bom">
+                <label for="good">Bom</label><br>
+
+                <input id="Regular" type="radio" name="userSatisfaction" value="regular">
+                <label for="Regular">Regular</label><br>
+
+                <input id="bad" type="radio" name="userSatisfaction" value="ruim">
+                <label for="bad">Ruim</label><br>
+
                 <br>   
-                <textarea name="userComment" id="comment" placeholder="Deixe o seu comentário"></textarea>
+
+                <label for="comment">Deixe o seu comentário:</label>
+                <textarea name="userComment" id="comment" placeholder="Digite seu texto aqui..."></textarea>
             </fieldset>       
             <button type="submit">Enviar</button>
         </form>
